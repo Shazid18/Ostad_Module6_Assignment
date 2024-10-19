@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #746c7b, #296fe0);
+    font-family: Arial, sans-serif;
+}
+
+.registration-card {
+    background-color: #fff;
+    padding: 30px;
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-basis: 48%;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+    width: 120px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* New Style for Gender Section */
+.form-group.full-width {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+.gender-options label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Gradient for Submit Button */
+button[type="submit"] {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reversed gradient on hover */
+}
+
+/* Gradient for Cancel Button */
+.cancel-btn {
+    background: linear-gradient(45deg, #e75850, #e54242); /* Red gradient */
+}
+
+.cancel-btn:hover {
+    background: linear-gradient(45deg, #ff1e1e, #ff5e57); /* Reversed red gradient on hover */
+}
